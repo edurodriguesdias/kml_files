@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>KML Layers</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          maxZoom: 20,
+          clickableIcons: false,
+          disableDefaultUI: true,
+          center: {
+              lat: -23.615713118216, 
+              lng: -46.7054832653275
+            }
+        });
+
+        let src = "https://raw.githubusercontent.com/edurodriguesdias/kml_files/master/";
+
+        // Array objects of kml files 
+        zones_file = [
+            {
+                path: 'ZCOR_1_NEW_6.kml',
+                name: 'ZCOR 1'
+            },
+            {
+                path: 'ZC_ZEIS.kml',
+                name: 'ZC ZEIS'
+            },
+            {
+                path: 'AC_1.kml',
+                name: 'AC 1'
+            }
+        ];
+
+
+        // Each all files in git repository
+        zones_file.forEach( (kmzFile, index, array) => {
+            render = new google.maps.KmlLayer( src + kmzFile.path, {
+                suppressInfoWindows: true,
+                map: map
+            }).addListener('click', function(kmlEvent) {
+                console.log(kmlEvent.featureData.name)
+            });
+        });
+        
+      }
+
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr6nG_MSK_Mw1Q1no6A2BxMnNf81a-LmM&callback=initMap">
+    </script>
+  </body>
+</html>
