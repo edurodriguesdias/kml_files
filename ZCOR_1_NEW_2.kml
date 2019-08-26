@@ -2,8 +2,13 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document id="root_doc">
 <Folder>
-  <name>ZCOR_1</name>
-  <description>Examples of groundee overlays</description>
+  <Placemark>
+    <name>My office</name>
+    <description>This is the location of my office.</description>
+    <Point>
+      <coordinates>-122.087461,37.422069</coordinates>
+    </Point>
+  </Placemark>
   <Placemark>
   <name>Floating placemark</name>
 	<Style>
