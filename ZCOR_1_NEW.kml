@@ -7,20 +7,20 @@
   <Placemark>
   <name>Floating placemark</name>
 	<Style>
-        <LineStyle>
-            <color>ff000000</color>
-        </LineStyle>
-        <PolyStyle>
-            <color>7FAAAAAA</color>
-            <fill>1</fill>
-            <outline>1</outline>
-        </PolyStyle>
-        <BalloonStyle>
-            <text>
-                <![CDATA[ZCOR 1]]>
-            </text>
-        </BalloonStyle>
-    </Style>
+          <LineStyle>
+              <color>ff000000</color>
+          </LineStyle>
+          <PolyStyle>
+              <color>7FAAAAAA</color>
+              <fill>1</fill>
+              <outline>1</outline>
+          </PolyStyle>
+          <BalloonStyle>
+              <text>
+                  <![CDATA[ZCOR 1]]>
+              </text>
+          </BalloonStyle>
+  </Style>
 
     <Polygon>
         <outerBoundaryIs>
