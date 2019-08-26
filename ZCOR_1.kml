@@ -3,7 +3,7 @@
 <Document id="root_doc">
 <Folder>
   <name>ZCOR_1</name>
-  <description>Examples of ground overlays</description>
+  <description>Examples of groundee overlays</description>
   <Placemark>
   <name>Floating placemark</name>
 	<Style>
