@@ -3,23 +3,24 @@
 <Document id="root_doc">
 <Folder>
 	<Style>
-          <LineStyle>
-              <color>ff000000</color>
-          </LineStyle>
-          <PolyStyle>
-              <color>7FAAAAAA</color>
-              <fill>1</fill>
-              <outline>1</outline>
-          </PolyStyle>
-          <BalloonStyle>
-              <text>
-                  <![CDATA[ZCOR 1]]>
-              </text>
-          </BalloonStyle>
+    <LineStyle>
+        <color>ff000000</color>
+    </LineStyle>
+    <PolyStyle>
+        <color>7FAAAAAA</color>
+        <fill>1</fill>
+        <outline>1</outline>
+    </PolyStyle>
+    <BalloonStyle>
+        <text>
+            <![CDATA[ZCOR 1]]>
+        </text>
+    </BalloonStyle>
   </Style>
 
 
-  <Placemark><name>ZCOR 1</name>
+  <Placemark>
+    <name>ZCOR 1</name>
     <Polygon>
         <outerBoundaryIs>
             <LinearRing>
@@ -27,6 +28,13 @@
             </LinearRing>
         </outerBoundaryIs>
     </Polygon>
+    <Style id="randomColorIcon">
+      <IconStyle>        
+         <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+         </Icon>
+      </IconStyle>
+    </Style>    
   </Placemark>
 
   <Placemark><name>ZCOR 1</name>
