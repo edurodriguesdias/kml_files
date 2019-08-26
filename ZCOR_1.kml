@@ -5,6 +5,7 @@
   <name>ZCOR_1</name>
   <description>Examples of ground overlays</description>
   <Placemark>
+  <name>Floating placemark</name>
 	<Style>
         <LineStyle>
             <color>ff000000</color>
