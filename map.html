@@ -37,29 +37,31 @@
 
         // Array objects of kml files 
         zones_file = [
-            {
-                path: 'ZCOR_1_NEW_6.kml',
-                name: 'ZCOR 1'
-            },
-            {
-                path: 'ZC_ZEIS.kml',
-                name: 'ZC ZEIS'
-            },
-            {
-                path: 'AC_1.kml',
-                name: 'AC 1'
-            }
+          {
+            path: 'ZCOR_1_NEW_6.kml',
+            name: 'ZCOR 1'
+          },
+          {
+            path: 'ZC_ZEIS.kml',
+            name: 'ZC ZEIS'
+          },
+          {
+            path: 'AC_1.kml',
+            name: 'AC 1'
+          }
         ];
 
 
         // Each all files in git repository
         zones_file.forEach( (kmzFile, index, array) => {
-            render = new google.maps.KmlLayer( src + kmzFile.path, {
-                suppressInfoWindows: true,
-                map: map
-            }).addListener('click', function(kmlEvent) {
-                console.log(kmlEvent.featureData.name)
-            });
+          render = new google.maps.KmlLayer( src + kmzFile.path, {
+            suppressInfoWindows: true,
+            map: map
+          }).addListener('click', function(kmlEvent) {
+
+            console.log(kmlEvent)
+            
+          });
         });
         
       }
