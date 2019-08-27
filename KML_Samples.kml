@@ -169,32 +169,7 @@
       </Placemark>
     </Folder>
     <Folder>
-      <name>Styles and Markup</name>
-      <visibility>0</visibility>
-      <description>With KML it is easy to create rich, descriptive markup to
-        annotate and enrich your placemarks</description>
-      <LookAt>
-        <longitude>-122.0845787422371</longitude>
-        <latitude>37.42215078726837</latitude>
-        <altitude>0</altitude>
-        <heading>-148.4126777488172</heading>
-        <tilt>40.55750733930874</tilt>
-        <range>365.2646826292919</range>
-      </LookAt>
-      <styleUrl>#noDrivingDirections</styleUrl>
       <Document>
-        <name>Highlighted Icon</name>
-        <visibility>0</visibility>
-        <description>Place your mouse over the icon to see it display the new
-          icon</description>
-        <LookAt>
-          <longitude>-122.0856552124024</longitude>
-          <latitude>37.4224281311035</latitude>
-          <altitude>0</altitude>
-          <heading>0</heading>
-          <tilt>0</tilt>
-          <range>265.8520424250024</range>
-        </LookAt>
         <Style id="highlightPlacemark">
           <IconStyle>
             <Icon>
