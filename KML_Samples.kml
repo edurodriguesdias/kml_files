@@ -114,19 +114,21 @@
         <tilt>40.5575073395506</tilt>
         <range>500.6566641072245</range>
       </LookAt>
+      
       <Placemark>
         <name>Simple placemark</name>
         <description>Attached to the ground. Intelligently places itself at the
           height of the underlying terrain.</description>
-    <IconStyle>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
-        </Icon>
-    </IconStyle>          
+        <IconStyle>
+          <Icon>
+            <href>http://maps.google.com/mapfiles/kml/shapes/airports.png</href>
+          </Icon>
+        </IconStyle>
         <Point>
           <coordinates>-122.0822035425683,37.42228990140251,0</coordinates>
         </Point>
       </Placemark>
+
       <Placemark>
         <name>Floating placemark</name>
         <visibility>0</visibility>
